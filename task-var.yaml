@@ -1,0 +1,13 @@
+- name: var level variables
+  hosts: local
+  connection: local
+  vars:
+   COURSE: DEVOPS
+   DURATION: 10hrs
+   TRAINER: sive
+  tasks:
+  - name: "print the course info"
+    vars:
+      COURSE: ansible
+    ansible.builtin.debug:
+      msg: "course info is: {{COURSE}} duration is: {{DURATION}} trainer is {{TRAINER}}"
