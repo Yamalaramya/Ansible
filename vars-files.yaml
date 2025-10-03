@@ -1,7 +1,7 @@
 - name: var level variables
   hosts: local
   connection: local
-  vars:
+  vars-files:
   - course.yaml
   tasks:
   - name: "print the course info"
