@@ -1,5 +1,5 @@
 - name: variables preference
-  hosts: frontend
+  hosts: local
   conncection: local
   vars:
     NAME: from play level
