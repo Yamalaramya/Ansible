@@ -1,6 +1,7 @@
 - name: check the fact
   hosts: local
   connection: local
+  become: yes
   tasks:
     - name: install nginx if RedHat
       ansible.builtin.debug:
