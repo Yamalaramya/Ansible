@@ -1,4 +1,4 @@
-- name: variables preference
+- name: vars preference
   hosts: local
   conncection: local
   vars:
