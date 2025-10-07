@@ -1,4 +1,4 @@
-- name: Data types
+- name: data types
   hosts: local
   connrction: local
   vars:
