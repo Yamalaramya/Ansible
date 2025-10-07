@@ -1,6 +1,6 @@
 - name: data types
   hosts: local
-  connrction: local
+  connection: local
   vars:
     COURSE: DEVOPS
     DURATION: 10 
