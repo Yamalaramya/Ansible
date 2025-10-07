@@ -1,6 +1,6 @@
 - name: vars preference
   hosts: local
-  conncection: local
+  connection: local
   vars:
     NAME: from play level
   vars_files:
