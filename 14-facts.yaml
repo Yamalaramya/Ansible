@@ -1,0 +1,16 @@
+- name: check the fact
+  hosts: local
+  connection: local
+  tasks:
+    - name: install nginx if RedHat
+      ansible.builtin.debug:
+      name: nginx
+      state: latest
+      when: ansible_os_family == "RedHat"
+     
+     -name: install nginx if RedHat
+      ansible.builtin.apt:
+      name: nginx
+      state: latest
+      when: ansible_os_family == "Debian"
+
